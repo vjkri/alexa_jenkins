@@ -1,0 +1,148 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cache clean",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "brandname",
+                    "slots": [
+                        {
+                            "name": "brand",
+                            "type": "brandnames"
+                        }
+                    ],
+                    "samples": [
+                        "{brand}",
+                        "brand {brand}",
+                        "for brand {brand}"
+                    ]
+                },
+                {
+                    "name": "localename",
+                    "slots": [
+                        {
+                            "name": "locale",
+                            "type": "localenames"
+                        }
+                    ],
+                    "samples": [
+                        "{locale}",
+                        "locale {locale}",
+                        "for locale {locale}"
+                    ]
+                },
+                {
+                    "name": "environmentname",
+                    "slots": [
+                        {
+                            "name": "env",
+                            "type": "environments"
+                        }
+                    ],
+                    "samples": [
+                        "{env}",
+                        "env {env}",
+                        "environment {env}",
+                        "for environment {env}",
+                        "for env {env}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "brandnames",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "site_1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "site_2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "site_3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "environments",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "training"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uat"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "localenames",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "engb",
+                                "synonyms": [
+                                    "e. n. g. b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "enus",
+                                "synonyms": [
+                                    "e. n. u. s"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "enin",
+                                "synonyms": [
+                                    "e. n. i. n"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
